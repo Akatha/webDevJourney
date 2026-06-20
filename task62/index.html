@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Create a bussiness name generator by combining list of adjectives and shop name and anotheer word
+        */
+        // adjectives Name
+        // Crazy
+        // Amazing
+        // Fire
+
+        /*shop name 
+        Engine
+        Foods
+        Garmenet
+
+
+        Another Word 
+        Bros 
+        limited 
+        Hub */
+    let first, second, third;
+    let rand = Math.floor(Math.random() * 3) + 1;
+    let obj1 = {
+        1: "Crazy",
+        2: "Amazing",
+        3: "Fire"
+    }
+    let rand2 = Math.floor(Math.random() * 3) + 1;
+    let obj2 = {
+        1: "Engine",
+        2: "Foods",
+        3: "Garmenet"
+    }
+    let rand3 = Math.floor(Math.random() * 3) + 1;
+    let obj3 = {
+        1: "Bros",
+        2: "limited",
+        3: "Hub"
+    }
+    first = obj1[rand];
+    second = obj2[rand2];  
+    third = obj3[rand3];
+    result = first + " " + second + " " + third;
+    console.log(result);  
+    
+
+    </script>
+</body>
+</html>
