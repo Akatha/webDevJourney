@@ -1,0 +1,476 @@
+:root{
+    --primary-color:#30AFFF;
+    --secondary-color:#92EEFF;
+    --text-color:#1e1e2f;
+    --darkText-color:#D8FFC5;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    
+   
+    font-family: "Poppins";
+}
+/* h1{
+    /* color: var(--primary-color);} */
+
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-inline: 1rem;
+}
+
+
+/* Hearder design */
+header{
+    /* border-bottom: 1px solid; */
+    padding-block: 1rem;
+    box-shadow:0 -2px 10px #2c2c2c ;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 99;
+
+}
+
+.header-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+header nav{
+    display: none;
+    
+}
+header nav a{
+    text-decoration: none; 
+}
+header nav a:hover{
+    text-decoration: underline; 
+}
+
+header .logo{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+section{
+    /* border: 1px solid black; */
+    padding-block: 10px;
+}
+
+section h2{
+    text-align: center;
+    font-weight: 500;
+    color: var(--text-color);
+    padding-bottom: 2rem;
+}
+.hero-images{
+    height: auto;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #2c2c2c;
+}
+
+.hero-items h1 span{
+    color: var(--primary-color);
+}
+.hero-items p{
+    color: var(--text-color);
+    padding-block: 1rem;
+}
+
+.hero-items button {
+    padding-inline: 1.5rem;
+    padding-block: 0.5rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 1px 5px black;
+    background-color: white;
+    cursor: pointer;
+    
+}
+.hero-items button.explore{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.hero-items button.shop-now{
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color)
+}
+.hero-items .action{
+    display: flex;
+    gap: 1rem;
+}
+
+.hero-items button:hover{
+    text-decoration: underline;
+}
+
+
+
+/* benefits Style */
+
+
+#benefits {
+    background-color: #e0e3ee;
+}
+.benefit-card{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+
+}
+.benefit-card span{
+    background-color: #92dbff;
+    padding: 0.6rem;
+    border-radius: 50%;
+    font-size: 2rem;
+}
+
+.benefit-items{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+/* featured product style  */
+
+.featured-products{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+}
+.featured-products .card{
+    /* border: 1px solid ; */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 3px 5px gray;
+}
+
+
+.featured-products .card:hover{
+    box-shadow: 0px 3px 10px gray;
+    transition: all ease 0.3s;
+}
+.featured-products .card .contain{
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    /* background-color: #e2eef6; */
+}
+
+.featured-products .card img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.featured-products .card .contain h4{
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.featured-products .card .contain .action{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 0.5rem;
+}
+
+.featured-products .card .action button{
+    padding-inline: 1.5rem;
+    padding-block: 0.5rem;
+    border-radius: 100px;
+    border: none;
+}
+
+.featured-products .card .action button:hover{
+   background-color: var(--primary-color);
+}
+/* product style  */
+
+
+#products{
+    background-color: #fbfbfb;
+}
+.products{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+}
+.products .card{
+    /* border: 1px solid ; */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 3px 5px gray;
+}
+
+
+.products .card:hover{
+    /* box-shadow: 0px 3px 10px gray;
+    transition: all ease 0.3s; */
+    transform: scale(1.02);
+}
+.products .card .contain{
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    /* background-color: #e2eef6; */
+}
+
+.products .card img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.products .card .contain h4{
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.products .card .contain .action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 0.5rem;
+}
+
+.products .card .action button{
+    padding: 0.5rem 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+    white-space: nowrap;
+}
+.products .card .action button:first-child{
+    
+    background-color: white;
+    color: var(--primary-color);
+    flex: 1;
+}
+.products .card .action button:last-child{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.products .card .action button:hover{
+background-color: #0266fb;
+color: white;
+}
+
+/* call to action style */
+.cta{
+    
+    padding: 2.5rem;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    text-align: center;
+}
+.cta h3{
+    font-size: 2rem;
+    color: white;
+}
+.cta p{
+    color: #e0e3ee;
+    padding-block: 1rem;
+}
+
+.cta button{
+    background-color: white;
+    padding: 0.5rem 2.5rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    color: var(--primary-color);
+
+}
+
+.cta button:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* testimonial style  */
+#testimonials{
+background-color: #f4f0f0;
+}
+
+.reviews{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.reviews .card{
+  
+   padding: 1.5rem;
+   border-radius: 10px;
+   box-shadow: 0px 5px 8px #575454;
+   background-color: white;
+}
+.reviews .card:hover{
+    transform: scale(1.02);
+    transition: all ease 0.3s;
+}
+
+.reviews .card p{
+    padding-block: 0.5rem;
+    color: var(--text-color);
+}
+
+.reviews .card h4{
+    font-weight: 500;
+    color: var(--primary-color);
+}
+.reviews .card p::before{
+    content: "❝";
+    font-size: 1.5rem;
+}
+.reviews .card p::after{
+    content: "❞";
+    font-size: 1.5rem;
+}
+
+/* contact style  */
+.contact-item{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.contact-item iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+form{
+    border-radius: 10px;
+    padding: 1.5rem 2.5rem;
+   box-shadow: 0px 5px 8px #575454;
+}
+form input,textarea{
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    border: 1px solid #d1d1d1;
+}
+form textarea{
+    resize: vertical;
+}
+
+form button{
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+}
+form button:hover{
+   background-color: #0266fb; 
+}
+footer{
+    text-align: center;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+
+
+@media (min-width:768px) {
+    section{
+    
+    padding-block: 4rem;
+}
+    
+    header nav{
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    .hero-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: center;
+    }
+  
+    .benefit-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.featured-products,.products{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.reviews{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+
+.contact-item{
+    
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+}
+
+
+@media (min-width:1200px) {
+
+.hero-items{
+            display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: center;
+        }
+
+        .hero-items h1 {
+            font-size: 3rem;
+        }
+
+.hero-items button {
+    padding-inline: 2rem;
+    padding-block: 0.7rem;
+    font-size: 1rem;
+}
+ .benefit-items{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.featured-products,.products{
+    display: grid;
+     grid-template-columns: repeat(4,1fr);
+    gap: 1.5rem;
+}
+}
